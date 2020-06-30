@@ -1,11 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { Link } from '@reach/router';
+
 
 const Xperiments = () => {
 
     return (
         <div>
-            Xperiments
+            <h2>Under construction</h2>
+            <Link to="/">Go Home</Link>
         </div>
     )
 };

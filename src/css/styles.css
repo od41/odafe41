@@ -5,52 +5,52 @@ Date: June 2020 */
 
 /* Variables */
 body {
-  --accent: #f1e80b;
-  --black: #000000;
-  --white: #e8e8e8;
+    --accent: #f1e80b;
+    --black: #000000;
+    --white: #e8e8e8;
 }
 
 body {
-  background-color: var(--black);
-  color: var(--white);
+    background-color: var(--black);
+    color: var(--white);
 }
 
 body::after {
-  content: "";
-  /* background: url(/images/black-bg-small.jpg); */
-  background: url(/images/dark-bg-lg-.jpg);
-  background-size: cover;
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+    content: "";
+    /* background: url(/images/black-bg-small.jpg); */
+    background: url(/images/dark-bg-lg.jpg);
+    background-size: cover;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 /* 1 - Style Header */
 header {
-  /* position: fixed; */
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 20px 0;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 0;
 }
 
 .logo a {
-  font-family: "Francois One", "Helvetica Neue", sans-serif;
-  color: var(--accent);
-  text-transform: uppercase;
-  font-size: 1.563rem;
-  text-decoration: none;
+    font-family: "Francois One", "Helvetica Neue", sans-serif;
+    color: var(--accent);
+    text-transform: uppercase;
+    font-size: 1.563rem;
+    text-decoration: none;
 }
 
 nav {
-  /* display: flex;
+    /* display: flex;
     justify-content: space-between;
     width: 40%;
     min-width: 300px; */
@@ -59,25 +59,25 @@ nav {
 /* Screen reader only 
 https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html for more info */
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 /* Hamburger button styling. "Button" is the bars icon from FontAwesome. */
 .menu-toggle {
-  color: var(--white);
-  /* margin-left: 1rem; */
+    color: var(--white);
+    /* margin-left: 1rem; */
 }
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  color: var(--accent);
+    color: var(--accent);
 }
 
 /*
@@ -86,85 +86,85 @@ https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html for more info 
 
 /* set the menu in a fixed position occupying 100% of the screen height, so you can't scroll away from it. Have nav scrollbars appear when needed. Any long nav names should be fully visible. */
 .main-menu {
-  position: fixed;
-  display: none;
-  right: -200px;
-  top: 0;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: visible;
-  transition: right 0.3s ease;
-  z-index: 999;
+    position: fixed;
+    display: none;
+    right: -200px;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: visible;
+    transition: right 0.3s ease;
+    z-index: 999;
 }
 
 /* turn off bullets, set width and background color of flyout menu. Width here and "left" property on main-menu should be the same absolute number */
 .main-menu ul {
-  list-style: none;
-  margin: 0;
-  padding-top: 4em;
-  min-height: 100%;
-  width: 250px;
-  background-color: var(--accent);
+    list-style: none;
+    margin: 0;
+    padding-top: 4em;
+    min-height: 100%;
+    width: 250px;
+    background-color: var(--accent);
 }
 
 /* Make links block to make them fully clickable on mobile. Remember this is finger navigation, so include plenty of clickable area. All links get a bottom border */
 .main-menu a {
-  display: block;
-  padding: 0.85rem;
-  padding-left: 25px;
-  color: var(--black);
-  text-decoration: none;
-  font-size: 1.563em;
-  /* border-bottom: 1px solid #383838; */
+    display: block;
+    padding: 0.85rem;
+    padding-left: 25px;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.563em;
+    /* border-bottom: 1px solid #383838; */
 }
 
 /* first link gets a border on top */
 .main-menu li:first-child a {
-  /* border-top: 1px solid #383838; */
+    /* border-top: 1px solid #383838; */
 }
 
 .main-menu a:hover,
 .main-menu a:focus {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .menu-contact {
-  position: relative;
-  bottom: 300px;
-  z-index: 1000;
+    position: relative;
+    bottom: 300px;
+    z-index: 1000;
 }
 
 .menu-contact .contact-title,
 .menu-contact .contact-role {
-  padding-left: 25px;
-  color: var(--black);
+    padding-left: 25px;
+    color: var(--black);
 }
 
 .menu-contact ul {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0 20px;
-  list-style: none;
-  margin: 0;
-  /* width: inherit; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 20px;
+    list-style: none;
+    margin: 0;
+    /* width: inherit; */
 }
 
 .menu-contact ul li {
-  color: var(--black);
+    color: var(--black);
 }
 
 .menu-icon-label {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 11px;
 }
 
 /* "close" button is positioned in the upper right corner. Button is the X / fa-close button from FontAwesome. If you want it bigger, do it here */
 .main-menu .menu-close {
-  position: absolute;
-  right: 12px;
-  top: 0;
+    position: absolute;
+    right: 12px;
+    top: 0;
 }
 
 /*
@@ -175,19 +175,19 @@ How is it targeted? Follow the HTML, line 18  <a href="#main-menu" id="main-menu
 Note the href targets the main menu (both class and ID)
   */
 .main-menu:target {
-  display: block;
-  right: 0;
-  outline: none;
+    display: block;
+    right: 0;
+    outline: none;
 }
 
 /* when main menu is targeted (button is clicked), bring the X to the top so it can be clicked */
 .main-menu:target .menu-close {
-  z-index: 1001;
+    z-index: 1001;
 }
 
 .main-menu:target ul {
-  position: relative;
-  z-index: 1000;
+    position: relative;
+    z-index: 1000;
 }
 
 /* 
@@ -196,65 +196,66 @@ Note the href targets the main menu (both class and ID)
 
    The backdrop is the link on line 42, with no content and hidden. Here we display it block, make it fixed, display it behind the menu (note Z values) and give it a color. It occupies any remaining space on the screen after the menu is displayed */
 
-.main-menu:target + .backdrop {
-  position: fixed;
-  display: block;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 998;
-  background: rgba(0, 0, 0, 0.85);
-  cursor: default;
+.main-menu:target+.backdrop {
+    position: fixed;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: rgba(0, 0, 0, 0.85);
+    cursor: default;
 }
 
 /*
    Now set desktop behavior -- MQ value is set to where the navigation starts to wrap
   */
 @media (min-width: 800px) {
-  /* header and nav borders rearranged for desktop */
-  header,
-  main {
-    border: none;
-    margin: 0;
-  }
 
-  nav {
-    /* border-top: 4px solid #9EA9C1;
+    /* header and nav borders rearranged for desktop */
+    header,
+    main {
+        border: none;
+        margin: 0;
+    }
+
+    nav {
+        /* border-top: 4px solid #9EA9C1;
         border-bottom: 1px solid #dddddd; */
-    padding: 0.3rem 0;
-  }
+        padding: 0.3rem 0;
+    }
 
-  /* fa-bars and fa-close not needed on desktop so hide them */
-  .menu-toggle,
-  .main-menu .menu-close {
-    display: none;
-  }
+    /* fa-bars and fa-close not needed on desktop so hide them */
+    .menu-toggle,
+    .main-menu .menu-close {
+        display: none;
+    }
 
-  /* Undo positioning of off-canvas menu - remember this is hidden by default. Default position property is static, i.e. normal flow */
-  .main-menu {
-    position: static;
-    display: block;
-    height: 25px;
-    overflow: hidden;
-  }
+    /* Undo positioning of off-canvas menu - remember this is hidden by default. Default position property is static, i.e. normal flow */
+    .main-menu {
+        position: static;
+        display: block;
+        height: 25px;
+        overflow: hidden;
+    }
 
-  /* Undo off-canvas styling */
-  .main-menu ul {
-    padding: 0;
-    height: auto;
-    width: auto;
-    background: none;
-    overflow: hidden;
-    text-align: center;
-  }
+    /* Undo off-canvas styling */
+    .main-menu ul {
+        padding: 0;
+        height: auto;
+        width: auto;
+        background: none;
+        overflow: hidden;
+        text-align: center;
+    }
 
-  /* display the li's horizontally */
-  .main-menu li {
-    display: inline-block;
-  }
+    /* display the li's horizontally */
+    .main-menu li {
+        display: inline-block;
+    }
 
-  /* above style the same as 
+    /* above style the same as 
     .main-menu li::after {
         content: " || ";
     }
@@ -262,133 +263,61 @@ Note the href targets the main menu (both class and ID)
       content: "";
   }
 */
-  /* undo off canvas style */
-  .main-menu li:first-child a {
-    border-top: none;
-  }
+    /* undo off canvas style */
+    .main-menu li:first-child a {
+        border-top: none;
+    }
 
-  /* desktop assumes a pointer display */
-  .main-menu a {
-    color: var(--white);
-    border-bottom: none;
-    display: inline;
-    font-size: 1.25rem;
-  }
+    /* desktop assumes a pointer display */
+    .main-menu a {
+        color: var(--white);
+        border-bottom: none;
+        display: inline;
+        font-size: 1.25rem;
+    }
 
-  /* Remove background from off-canvas styling, change colors */
-  .main-menu a:hover,
-  .main-menu a:focus {
-    background: none;
-    color: var(--accent);
-    text-decoration: none;
-  }
+    /* Remove background from off-canvas styling, change colors */
+    .main-menu a:hover,
+    .main-menu a:focus {
+        background: none;
+        color: var(--accent);
+        text-decoration: none;
+    }
 }
 
 /* End Style Header pages*/
 
 /* 2 - Style Home pages*/
 #home {
-  display: block;
-  height: calc(100vh - 78px);
-  position: relative;
+    display: block;
+    height: calc(100vh - 78px);
+    position: relative;
 }
 
 .slide {
-  bottom: 0;
-  display: flex;
-  left: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
+    bottom: 0;
+    display: flex;
+    left: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
 }
 
 .slide-inner {
-  max-width: 100%;
-  padding: 10px 0;
-  height: 100%;
-  position: relative;
+    max-width: 100%;
+    padding: 10px 0;
+    height: 100%;
+    position: relative;
 }
 
 .slide-text {
-  grid-column-start: wrapper-start;
-  width: 100%;
-  grid-column-end: span 7;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-self: center;
-}
-
-.small {
-  text-transform: uppercase;
-  color: var(--white);
-  font-size: 1.22rem;
-  margin-bottom: 10px;
-}
-
-.featured {
-  list-style: none;
-}
-
-.featured button {
-  font-family: "Francois One", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2.441rem;
-  font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: -0.05rem;
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.featured button:hover,
-.featured button:focus {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-.slide-background {
-  padding: 0;
-  grid-row: 1;
-}
-
-.slide-background img[device-orientation="mobile"] {
-  display: block;
-  position: absolute;
-  height: 447px;
-  left: 50px;
-  bottom: 20px;
-  -o-object-fit: contain;
-  object-fit: contain;
-  opacity: 1;
-  pointer-events: none;
-  /* transform: translate3d(-50%, 0, 0);
-    transition: all 1ms ease-out .3s; */
-  /* visibility: hidden; */
-  /* -webkit-mask-image: linear-gradient(90deg, transparent, #000 20%);
-    mask-image: linear-gradient(90deg, transparent, #000 20%); */
-}
-
-.slide-background img[device-orientation="desktop"] {
-  visibility: hidden;
-  display: none;
-  opacity: 0;
-  pointer-events: none;
-}
-
-@media (min-width: 367px) {
-  .featured button {
-    margin-bottom: 1rem;
-  }
-
-  .slide-text {
     grid-column-start: wrapper-start;
     width: 100%;
     grid-column-end: span 7;
@@ -396,45 +325,116 @@ Note the href targets the main menu (both class and ID)
     flex-direction: column;
     position: relative;
     align-self: center;
-  }
-
-  .slide-inner {
-    max-width: 100%;
-    padding: 40px 0;
-    display: grid;
-    grid-template-columns:
-      [start] minmax(0, 1fr) [wrapper-start] repeat(12, minmax(0, 65px))
-      [wrapper-end] minmax(0, 1fr) [end];
-    grid-gap: 32px;
-    height: 100%;
-    position: relative;
-  }
 }
 
-@media (min-width: 740px) {
-  .slide-background img[device-orientation="desktop"] {
+.small {
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 1.22rem;
+    margin-bottom: 10px;
+}
+
+.featured {
+    list-style: none;
+}
+
+.featured button {
+    font-family: "Francois One", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2.441rem;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.05rem;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.featured button:hover,
+.featured button:focus {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.slide-background {
+    padding: 0;
+    grid-row: 1;
+}
+
+.slide-background img[device-orientation="mobile"] {
     display: block;
     position: absolute;
-    width: 80%;
-    left: 25%;
-    top: 2%;
+    height: 447px;
+    left: 50px;
+    bottom: 20px;
     -o-object-fit: contain;
     object-fit: contain;
     opacity: 1;
-    visibility: visible;
     pointer-events: none;
     /* transform: translate3d(-50%, 0, 0);
     transition: all 1ms ease-out .3s; */
+    /* visibility: hidden; */
     /* -webkit-mask-image: linear-gradient(90deg, transparent, #000 20%);
     mask-image: linear-gradient(90deg, transparent, #000 20%); */
-  }
+}
 
-  .slide-background img[device-orientation="mobile"] {
+.slide-background img[device-orientation="desktop"] {
     visibility: hidden;
     display: none;
     opacity: 0;
     pointer-events: none;
-  }
+}
+
+@media (min-width: 367px) {
+    .featured button {
+        margin-bottom: 1rem;
+    }
+
+    .slide-text {
+        grid-column-start: wrapper-start;
+        width: 100%;
+        grid-column-end: span 7;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-self: center;
+    }
+
+    .slide-inner {
+        max-width: 100%;
+        padding: 40px 0;
+        display: grid;
+        grid-template-columns:
+            [start] minmax(0, 1fr) [wrapper-start] repeat(12, minmax(0, 65px)) [wrapper-end] minmax(0, 1fr) [end];
+        grid-gap: 32px;
+        height: 100%;
+        position: relative;
+    }
+}
+
+@media (min-width: 740px) {
+    .slide-background img[device-orientation="desktop"] {
+        display: block;
+        position: absolute;
+        width: 80%;
+        left: 25%;
+        top: 2%;
+        -o-object-fit: contain;
+        object-fit: contain;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: none;
+        /* transform: translate3d(-50%, 0, 0);
+    transition: all 1ms ease-out .3s; */
+        /* -webkit-mask-image: linear-gradient(90deg, transparent, #000 20%);
+    mask-image: linear-gradient(90deg, transparent, #000 20%); */
+    }
+
+    .slide-background img[device-orientation="mobile"] {
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 /* End Style Home pages*/
@@ -444,3 +444,14 @@ Note the href targets the main menu (both class and ID)
 /* Style Work pages */
 /* Style Xperiment pages */
 /* Style About Me pages */
+
+.photo-section {
+    background: url(/images/odafe-aror.png);
+    width: 100%;
+    height: 370px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* End Style Home pages*/
